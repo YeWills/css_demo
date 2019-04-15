@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>Advanced Form</title>
+  <style>
+      input[type="checkbox"] {
+        position: absolute;
+        overflow: hidden;
+        width: 1px;
+        height: 1px;
+        clip: rect(0 0 0 0);
+      }
+      input[type="checkbox"] + label {
+        line-height: 1.5;
+        color: #333;
+        padding-left: 1.5em;
+        background-position: .125em 36%;
+        background-repeat: no-repeat;
+        background-size: 18px 18px;
+      }
+      input[type="checkbox"] + label {
+        background-image: url(images/checkbox-unchecked.png);
+      }
+      input[type="checkbox"]:checked + label {
+        background-image: url(images/checkbox-checked.png);
+      }
+      input[type="checkbox"]:focus + label {
+        background-image: url(images/checkbox-unchecked-focus.png);
+      }
+      input[type="checkbox"]:focus:checked + label {
+        background-image: url(images/checkbox-checked-focus.png);
+      }
+    </style>
+  </head>
+  <body>
+   <div>
+    <input type="checkbox" name="lang-as" id="lang-as">
+    <label for="lang-as">ActionScript</label>
+   </div>
+    </body>
+    </html>
